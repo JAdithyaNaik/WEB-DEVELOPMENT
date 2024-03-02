@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODELLING</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+          background-color: black; 
+        }
+        .box1{
+            color: red;
+            padding: 40px; 
+            margin: 10px; 
+            border: 5px blue solid;
+            height: 100px;
+            /* the below css property will be given whenever, we need the height given should apply to the padding and border only(margin is not included) */
+           /* If we need to apply the height to only the content then we should not write this style(padding and border are applied individually) */
+           
+            box-sizing: border-box;
+        }
+        .box2{
+            color: yellow;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- total height of an container = height + left side heights of (padding+border+margin) +right side heights of (padding+border+margin) -->
+    <!-- total width of an container = width + bottom widths of (padding+border+margin) +top widths of (padding+border+margin) -->
+
+
+    <!-- background colour will be applied to padding area but no  the margin or border -->
+    
+    <div class="box box1">Iam a box</div>
+     <div class="box box2">Iam another Box</div>
+
+
+     <!-- ANOTHER TOPIC:
+        MARGIN COLLAPSE-->
+
+        <!--When ever two margins are overlapping then , the greater margin amongst them will be applied(but not the both)  -->
+</body>
+</html>

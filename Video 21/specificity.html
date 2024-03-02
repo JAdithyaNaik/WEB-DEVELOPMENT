@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in CSS</title>
+</head>
+<body>
+    <h1>RULES TO APPLY IN CSS</h1>
+ <dl>
+    <dt><h2>1. position of the element or class(if all are same i.e all are classes or all are ids) : </h2></dt>
+    <dd>-- which evr is the lat that will be finalized</dd>
+
+
+    <dt><h2>2. if all are different i.e one is a class and other is aeleemnt and other is a id) :</h2></dt>
+    <dd>-- then we have a precedence rule for resolving that ambiguity <br>
+        <h4>important(10000)>inline style(1000)>id selectror(#)(100)>class(.) or attribute selector([]) or pseudo class(:)(10)>element selector(1)>universal selector(0) <br> <br>
+
+            <h5>by this we can say that we need to avoid using high precedence things,just because we cant overridr them!!!</h5>
+            <!-- the values given in the braces are specificity values and these  values are used in calculating the specifity -->
+        </h4>
+    </dd>
+
+
+    <dt><h2>3. origin </h2></dt>
+    <dd>-- effect from the browsser</dd>
+
+
+    <dt><h2>4. IMPORTANT(10000)</h2></dt>
+    <dd>-- it is firstly given priority and it is defined by :important(i.e its priority is more than inline style</dd>
+ </dl>
+</body>
+</html>

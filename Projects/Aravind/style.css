@@ -1,0 +1,191 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: black; */
+}
+.box1{
+    background: rgb(158, 149, 149);
+    width:auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* border: 10px; */
+    padding: 30px;
+    :hover{
+        color:silver;
+        }
+    /* margin: 20px 20px; */
+    
+}
+.acheivements{
+    cursor: pointer;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    /* background: rgb(111, 84, 84); */
+    margin: 10px;
+    width: 40%;
+}
+.strengths{
+    cursor: pointer;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    /* background: rgb(118, 103, 103); */
+    margin: 10px;
+    width: 20%;
+}
+.goals{
+    cursor: pointer;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    /* background: rgb(168, 151, 151); */
+    margin: 10px;
+    width: 40%;
+}
+h1{
+    font-family: 'Poppins', sans-serif; 
+}
+h2{
+    font-family: 'Glory', sans-serif;
+}
+div{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+}
+.icons{
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    align-items: center;
+}
+img{
+    width: 40px;
+    padding: 10px;
+}
+.box{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif; 
+   /* border: 20px; */
+}
+.abtus{
+ font-weight: 900;
+ font-size: 45px;
+}
+.p1{
+    font-size: 20px;
+}
+.bio{
+    display: flex;
+    background: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.txt{
+    color: rgb(34, 43, 42);
+    background-color: rgb(255, 255, 255); 
+    text-align: center; 
+    /* width:50%; */
+    position: relative;
+    /* left: 90px; */
+    font-family: 'Poppins', sans-serif;
+    
+}
+.pic{
+    width:70px;
+}
+.name{
+    width: auto;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.desi{
+    width: auto;
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+#mymainpic{
+    width: 163px;
+    padding: 60px;
+    position:relative;
+    /* left:17px; */
+    
+}
+ul{
+    list-style: none;
+}
+.eduskillsproje{
+    background-color: rgb(212, 133, 133);
+    /* display: flex; */
+}
+.edu{
+    margin: 10px;
+    cursor: pointer;
+    width: 33%;
+background-color: rgb(182, 117, 182);
+}
+.ski{
+    margin: 10px;
+    width: 33%;
+background-color: gainsboro;
+}
+.proj{
+    margin: 10px;
+    width: 33%;
+background-color: rgb(113, 53, 83);
+}
+.content-edu{
+    height: 500px;
+    width: 300px;
+    background-color: rgb(182, 169, 169);
+    /* display:none; */
+
+}
+/* .icon1{
+     :hover{
+        border: 5px solid rgb(185, 50, 50);
+        display: none;
+        
+    }
+}
+.icon2{
+     :hover{
+        border: 1px solid silver;
+        
+    }
+}
+.icon3{
+     :hover{
+        border: 1px solid rgb(206, 2, 2);
+        
+    }
+}
+.icon4{
+     :hover{
+        border: 1px solid silver;
+        
+    }
+}
+.icon5{
+     :hover{
+        border: 1px solid silver;
+        
+    }
+} */

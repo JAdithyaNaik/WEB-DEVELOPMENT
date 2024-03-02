@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* class */
+        .a{
+            color: green;
+        }
+        /* child */
+        div > p {
+            color: blue;
+        }
+        /* direct */
+        span{
+            color: violet;
+        }
+        /* id */
+        #b{
+            color: brown;
+        }
+        /* decendent */
+        div span{
+            color: red;
+        }
+        /* univeral */
+        *{
+            background: #ffffff;
+        }
+        /* pseudo */
+        a:visited{
+            color: yellow;
+        }
+        a:hover{
+            color: rgb(220, 220, 220);
+        }
+        a:active{
+            color: green;
+        }
+        a:link{
+            color: white;
+        }
+         a:first-child{
+            color: rgb(81, 11, 11);
+        }
+          /*ye mujhe nahi samaj me nahi aaya*/
+    </style>
+</head>
+<body>
+    There are mainly 4 selectors:
+    1.Class(.)<br>
+    2.Id(#) <br>
+    3.Child <br> directly inside(>) a particular attribute
+    4.Decendent <br> indirectly inside the other attribute(" ") 
+    5.Pseudo(:) <br><br><br>
+    6.univerasl(*)
+    <div class="a">
+        This is inside div which is inside a class
+        <p>
+            this is a para inside a div <br>
+            <span>
+                This is  inside a div of class a and para and in that span
+            </span>
+        </p>
+    </div>
+
+    <span>
+        this is inside a span whic is inside a ID 
+    </span>
+    <div id="b">
+        This is inside a div 
+    </div>
+    <div>
+        <a href="https://www.codewithharry.com">Go to Code With Harry bhai ka website</a>
+    </div>
+</body>
+</html>

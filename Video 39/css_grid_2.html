@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID 2</title>
+    <!-- IN THIS WE WILL BE DICUSSING HOW TO PLACE A CELL AT A PLACE BY USING GRID AREA.(SECOND WAY OF DOING)  -->
+<style> 
+/* grid me bhi justify items is there,aliegn items centre,gap,and justify content and align content,align self,justify self */
+     .container{
+          border: 2px solid red;
+          display: grid;
+          height: 100vh;
+          width: 100vw;
+          /* divides equally with respect to total width(columns) and height(rows) */
+          /* sum of all frs over total height / width */
+          /* place-content: center;    by doing this both align content and justify content becomes center */
+          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-areas: "nav nav nav"
+                                "main main empty"
+                                "foot foot foot";
+     }
+     .item{
+            border: 2px solid rgb(162, 255, 0);
+            height: 50px;
+            /* width: 50px; */
+            /* margin: 35px; */
+        
+        }
+        .item1{
+            grid-area: nav;
+            background-color: lightblue;
+        }
+        .item2{
+            grid-area: nav;
+            background-color: lightblue;
+        }
+        .item3{
+            grid-area: nav;
+            background-color: lightblue;
+        }
+        .item4{
+            grid-area: main;
+            background-color: lightpink;
+        }
+        .item5{
+            grid-area: main;
+            background-color: lightpink;
+        }
+        .item6{
+            /* 6 is overlapped by nav */
+            grid-area: nav;
+            background-color: lightskyblue;
+        }
+        .item7{
+            grid-area: foot;
+            background-color: lightcoral;
+        }
+        .item8{
+            grid-area: foot;
+            background-color: lightcoral;
+        }
+        .item9{
+            grid-area: foot;
+            background-color: lightcoral;
+        }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1 </div>
+        <div class="item item2">2 </div>
+        <div class="item item3">3 </div>
+        <div class="item item4">4 </div>
+        <div class="item item5">5 </div>
+        <div class="item item6">6 </div>
+        <div class="item item7">7 </div>
+        <div class="item item8">8 </div>
+        <div class="item item9">9 </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 98vh;
+            width: 98vw;
+            /* this property should be added to container but no on the  items,kyyuin ki container me vo flex hona chahiiye na!! apko */
+            display: flex;
+            /* this is to keep the content in the container in center */
+            /* does horizontally center */
+            justify-content: center;
+            /* justify items nahi hotha hai */
+            /* more types in justify content and aliegn items
+    1.left
+    2.right
+    3.flex end(yaha flex ka mathlab hai border i.e border ke end pe)
+    4.flex start(yaha flex ka mathlab hai border i.e border ke start pe)
+    5.space around(all 4 sides gaps)
+    6.space between(only 2 sides gaps) */
+            /* does vertically center */
+            align-items: center;
+            /* flex-direction: column;
+    flex box me 2 axis hotha hai 1.main axis(direction of flex direction)  2.cross axis */
+            /* flex-wrap: flex direction wrap kaha karna; */
+            flex-flow: row wrap;
+            /* this is used when we have mutiple lines */
+            /* align-content: center; */
+            /* gap: 20px; */
+
+            row-gap: 30px;
+            column-gap: 10px;
+
+            /* short hand :  
+    gap: 0px 0px;  row , coloum */
+        }
+
+        .item {
+            border: 2px solid rgb(0, 0, 0);
+            height: 100px;
+            width: 98px;
+            padding: 5px;
+            margin: 5px;
+            background-color: slategray;
+
+
+        }
+        .order23{
+            order: 23;
+        }
+        .order100{
+            order: 100;
+        }
+        .item1{
+            flex-grow: 2;
+        }
+        .item2{
+            flex-shrink: 3;
+        }
+        .item3{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">cvsvf</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item2"></div>
+        <div class="item"></div>
+        <div class="item item3">self</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order23">23</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order100">100</div>
+
+    </div>
+    <!-- new concepts on container -->
+    <!-- 1.flex direction
+    2.flex wrap
+3.flex flow
+4.gap -->
+
+    <!-- new concepts on item
+ 1.order-default=0
+ 2.flex grow
+ 3.flex shrink
+ 4.align self(for that particular item) ( the item which has higheest oreder comes last)-->
+</body>
+
+</html>

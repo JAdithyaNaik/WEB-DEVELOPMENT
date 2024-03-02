@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITION PROPERTIES</title>
+    <style>
+        /* 1.static(default
+        2.relative
+        3.absolute
+        4.fixed
+        5.sticky) */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            /* border: 3px solid black; */
+            height: 50vw;
+            width: 80vw;
+            margin: 10px;
+            padding: 24px;
+        }
+
+        .box1 {
+            background-color: lightblue;
+        }
+
+        /* default value of position is static ; so when it is there we cant make the boxes to access the properties like top , left and etc...
+        
+        so,
+        to access them we need to change the position to absolute or relative
+        
+        when relative is applied , other boxexare not effected*/
+        .box2 {
+            background-color: lightgreen;
+            /* <!--  absolute thab upayog hotha jab, nearest positioned(other than static i.e relative..etc..) ancester ka properties laghna chahiye
+                
+                
+        nearest parent the mathlab hotha hai=== outer block .her,parent then body,then html.then etcc..--> */
+            /* position: absolute; */
+            top: 8px;
+            /* z-index:3; */
+            /* over lay depends on the z index(which ever is greater) */
+            /* values may be negative */
+            left: 60px;
+        }
+
+        .box3 {
+            background-color: rgb(255, 255, 255);
+            /* position: relative; */
+            bottom: 0px;
+            width: 200px;
+            position: fixed;
+            height: 50px;
+            /* z-index:1; */
+        }
+
+        .text {
+            /* left: 34px; */
+            text-align: right;
+        }
+
+        .box4 {
+            background-color: lightcoral;
+        }
+        .box5{
+            /* sticky */
+            background-color: rgb(190, 0, 0);
+            position:relative;
+            height: 70px;
+            margin: 0px;
+            top:10px;
+            position: sticky;
+            top: 30px;
+        }
+
+        .parent {
+            margin: 0px;
+            padding: 0px;
+            border: 7px solid purple;
+            /* position: absolute; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box5"></div>
+        <div class="box box2"></div>
+        <div class="box box1"></div>
+        <div class="box text box3">
+            X
+        </div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- what is the difference between sticky and fixed
+
+ANS:
+sticky:
+------
+till we dont scroll it behaves like static ,but when ever we scrolled the properties applied after the sticky will be applied
+fixed:
+-----
+when it is scrolled or not let it fixed with its properties
+-->
+<!-- *********IMP********
+when ever a block of code is a child of another block of code,and when ever we are applying position property when a child checks with respect to the parent of position property
+
+but there is a exception that , child's position property is checked iwth the parents other properties like:transform,filter,perspective
+-->

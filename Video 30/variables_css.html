@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+</head>
+<style>
+    :root {
+        /*
+. variables are declared in root block
+. variable name can be anything
+. starts with --
+ */
+        /* best use of vriables is that when ever we want to change the colour of text or soomething else,instead of changing the colours individually , it is better to change them at a time (to do so the color of the individual blocks should be declared by var())*/
+
+        /* VARIABLE INITIALIZATION */
+        --c: red;
+        /* and there are 2 types of variables : global and local
+---->
+when ever local variables are declared using the same name then they override the globalvalues*/
+
+        /* variables are not only used for colours initialization */
+        --defpad: 20px;
+        --defop : 0.4;
+        /* defop ko opacity nahi hotha hai */
+    }
+
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    div {
+        color: var(--c);
+        padding: var(--defpad);
+        opacity: var(--defop);
+    }
+
+    p {
+        /* VARIABLE ACCESSING */
+        color: var(--c);
+        padding: var(--defpad);
+        
+    }
+
+    span {
+        --c: blue;
+        color: var(--c);
+        padding: var(--defpad);
+        opacity: var(--defop);
+        
+    }
+</style>
+
+<body>
+    <p>
+        1. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, assumenda. Saepe veritatis quisquam
+        placeat
+        molestias assumenda qui possimus quia tempore repudiandae deserunt mollitia hic eos, quasi tenetur laudantium
+        ipsa delectus provident in eius asperiores nesciunt consectetur magnam ullam id! Omnis consequuntur suscipit,
+        aliquid voluptas ratione optio non. Exercitationem sequi officiis quis libero, consequatur vitae obcaecati
+        natus, tempore quas necessitatibus inventore nesciunt a laborum aspernatur? Ipsa libero adipisci corrupti
+        voluptatibus perspiciatis repudiandae vel deleniti quas ducimus enim ab eum odit, porro commodi iure ullam
+        omnis? Illo tempora esse, est error tempore, itaque dolorem nam natus, consectetur possimus vitae enim commodi
+        odit!
+    </p>
+    <br>
+    <div>
+        2. <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ab laboriosam natus similique. Non cum,
+        rerum dolore fugiat qui sit.
+    </div>
+    <br>
+    <span>
+        3. <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, saepe beatae? Eos cumque provident
+        cum saepe non culpa deleniti dolorem vel libero illum, ipsum, incidunt ipsam autem consequatur asperiores
+        assumenda similique, repellendus iste quos mollitia exercitationem eveniet quae corrupti. A ut temporibus sequi
+        fugit reiciendis, aliquam et ad quod ipsa cupiditate explicabo voluptatibus culpa numquam vel mollitia porro
+        excepturi distinctio odit minus accusantium? Ea eius est, quo voluptates rerum quidem magni adipisci ullam
+        necessitatibus modi! Molestiae cupiditate veritatis rem, fuga sunt dignissimos autem fugiat nihil omnis
+        consectetur blanditiis ducimus recusandae odit architecto soluta? Veritatis natus vero perspiciatis dolor maxime
+        expedita omnis maiores magni dolorum, sapiente et at nostrum? Fugiat dolore praesentium tenetur cupiditate est
+        natus quae officia, harum a quo sequi perferendis officiis dolores animi laborum asperiores laboriosam
+        consectetur ab vitae odit optio facilis obcaecati. Culpa reprehenderit voluptas, vitae veritatis, error quasi
+        ratione sint laborum aliquam quae qui incidunt quos natus, id inventore. Facere, ratione, odio laboriosam,
+        incidunt placeat sapiente voluptatem hic itaque illo natus repudiandae. Labore, esse recusandae corporis dolorem
+        tempore sequi placeat dolores necessitatibus. Animi itaque, in doloribus nam ex aliquid, dolores explicabo,
+        magni ipsum consectetur debitis harum! Nemo animi illo dolor dolore nulla nam vel quisquam laudantium.
+    </span>
+</body>
+
+</html>
+
+<!-- snapshot =  windows key + shift + s
+    word wrap = alt+z
+    format document = alt+shift+f -->

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+    <style>
+        .container {
+            background-color: aqua;
+            width: 50vw;
+            height: 40vh;
+
+        }
+
+        .box {
+            background-color: rgb(6, 107, 195);
+            width: 5vw;
+            height: 4vh;
+            /* animation-name: Adithya;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-iteration-count: infinite; */
+            /* this can be written in shortand as below */
+            animation: Adithya 5s ease 1s  , adi 5s ease 1s;
+
+            /* multiple animations can be given as above by comma separation */
+            /* animation-name: adi;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 1s; */
+
+        }
+
+        @keyframes Adithya {
+            from {
+                /* background-color: rgb(249, 0, 0); */
+                transform: translateX(10px) translateY(10px);
+            }
+
+            to {
+                /* background-color: yellow; */
+                transform: translateX(500px) translateY(500px);
+            }
+        }
+        /* @keyframes adi {
+            0%{
+                transform: rotate(10deg);
+            }
+            25%{
+                transform: rotate(25deg);
+            }
+            50%{
+                transform: rotate(45deg);
+            }
+            75%{
+                transform: rotate(65deg);
+            }
+            100%{
+                transform: rotate(90deg);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box tr">
+        </div>
+    </div>
+</body>
+
+</html>

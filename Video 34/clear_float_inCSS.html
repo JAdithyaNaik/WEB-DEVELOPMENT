@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLoat & Clear in CSS</title>
+    <style>
+        .boxes{
+            border: 2px solid red;
+            padding: 5px;
+            /* iss se image overflow nahi hogi */
+            display: flow-root;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 5px;
+            margin: 2px;
+        }
+       img{
+        /* float karne se image usepe float karega
+        clear karne se image usepe float nahi karega varna usko extra space create karke dhedhega */
+        float: right;
+        /* jisme lagaya jayega kya float karna hai (selector)*/
+        /* clear: right; */
+       }
+      div:nth-child(3){
+        background-color: aqua;
+        /* lagaya jayega kisme se clear hona hai(selector) */
+        clear: right;
+      }
+        p{
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h3>THIS PROPERTIES ARE NOT USED PREFERABLY FOR MAKING OF LAYOUTS-ISS SE BHI ACCHA ACCHA PROPERTIES HAI IS LIYE</h3>
+    <div class="boxes">
+        <!-- importing from browser -->
+    <img src="https://th.bing.com/th/id/R.3cb97d2f4db6e5104606277041a4d507?rik=s0Z2tYBS9d0D5g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f7%2f3%2ff%2f1201986-coding-wallpaper-hd-2880x1800-meizu.jpg&ehk=wwXaRTazAAsf1HUCZcskonNUw7nRBgyrSH4U7idmbBU%3d&risl=&pid=ImgRaw&r=0" alt="" width="400px">
+        <!-- <img src="sample img.jpeg" alt=""> -->
+        <div class="box">
+            <p> 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis ut corrupti ea excepturi dolorem earum consequatur nesciunt sequi officia.</p>
+        </div>
+        <div class="box">
+            <p>
+                card 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum adipisci tenetur quas vitae modi nemo, voluptatum nesciunt iusto voluptate quis nulla, praesentium aliquid, nihil mollitia nam. Recusandae exercitationem quae magni dicta non nostrum voluptatem doloremque amet nulla eveniet aspernatur porro consectetur quidem nihil natus, est hic voluptatibus esse qui aliquid voluptate? Atque voluptatum magni aliquam ex beatae, impedit labore, illum quod, autem libero iste! Necessitatibus blanditiis fuga animi tenetur assumenda atque, accusamus officiis a quo iusto qui temporibus sed nisi. Alias eius nisi nostrum adipisci modi illum, provident cum ducimus recusandae. Minus non laboriosam accusantium hic debitis doloribus fugiat magnam placeat aliquam voluptates soluta dolores iure animi aut error harum, sequi nisi architecto similique corporis recusandae modi! Officia ab illum soluta perferendis repellat at perspiciatis eaque facere, assumenda pariatur ipsa maxime impedit! Non maiores, deleniti quasi eaque sed nisi quae nostrum eos ad inventore quisquam vitae impedit? Facere rerum maiores, quas atque molestias exercitationem provident omnis beatae repudiandae odio sunt voluptatum earum? Quia itaque veritatis aperiam maiores amet dolor modi fuga molestiae laboriosam aliquid obcaecati animi eius rerum nesciunt, ratione tempore reiciendis harum porro dicta, cumque distinctio minus eaque! Quos aspernatur repellat eos, similique pariatur quidem exercitationem voluptates. Nostrum voluptatum culpa minus aut modi ratione hic perferendis facere odio dolorem unde nobis error quis harum illum explicabo, nisi perspiciatis vel quia cupiditate? Labore delectus natus tempore a dolorem porro ratione quam. Atque id tempora maiores debitis aliquid nam corrupti. Impedit quidem dolor, velit provident doloremque ducimus? Dolorem porro libero laudantium facilis eligendi ipsam ab eaque consequuntur, quisquam corrupti, aut velit mollitia id exercitationem? Consequatur in impedit provident aliquam atque maiores temporibus mollitia enim dicta, quam maxime quaerat optio excepturi voluptates quis explicabo placeat cupiditate, magni nam, laboriosam cum tenetur asperiores eaque? Porro voluptatem praesentium nesciunt eius vero possimus velit hic distinctio reiciendis, adipisci, quam dolores natus quod voluptate quidem, sunt cum aliquam ullam optio architecto soluta. Eligendi atque fugiat cum ad rem iusto nihil reiciendis consequatur odit, eum dolor sunt aspernatur, officiis deleniti.
+            </p>
+        </div>
+        <div class="box">
+            <p>card 3</p>
+        </div>
+    </div>
+</body>
+</html>

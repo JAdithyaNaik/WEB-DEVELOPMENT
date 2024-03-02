@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and outlines in HTML</title>
+    <style>
+        .shadows{
+            background-color: rgb(242, 239, 239);
+            border: 2px solid green;
+            /* box-shadow: h-offset v-offset blur spread color inset;
+            inset is optional and it is used when we need to keep a shadow inside the box */
+            box-shadow: 7px 7px 15px 3px #311a1a;
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow:  2px 2px 4px #e50c0c;;
+        }
+        p{
+            outline:19px solid blue;
+            /* this is thedistance between the outline and border */
+            outline-offset: 3px;
+            border:5px solid #311a1a;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h4>
+        there are many difference between outline and borders:
+        borders is from inside while outline is from outside
+    </h4>
+    <div class="shadows">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio expedita, neque ipsa nobis beatae nesciunt. Ipsa soluta suscipit, error, cupiditate non blanditiis aspernatur dolor debitis dolore ducimus eveniet fugit in? Vitae nesciunt laboriosam optio rem, accusamus atque distinctio molestias totam incidunt saepe doloribus architecto quia quam repellat omnis nisi nobis aliquid officiis natus quae impedit expedita nihil. Animi debitis voluptas excepturi in rerum labore voluptates ducimus saepe consequatur officiis temporibus iusto ipsum, autem, deserunt voluptatum maxime sequi assumenda ab aperiam fugit modi vero beatae, architecto perferendis. Ut qui sed perspiciatis asperiores ratione nihil nostrum ex rem reiciendis? Corrupti, unde.
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at id voluptatum vitae blanditiis tempora ea, corrupti, laudantium fugit assumenda voluptas doloribus aut laboriosam atque provident quo libero praesentium vero reiciendis natus, dolores veritatis eligendi maiores adipisci! Accusantium suscipit dolorum in recusandae facilis doloremque reiciendis quae doloribus. Est, dignissimos recusandae.
+    </p>
+</body>
+</html>

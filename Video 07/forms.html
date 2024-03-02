@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+
+<body>
+    <h1>Form to apply for Sigma Web Development course - TA </h1>
+    <form action="post">
+        <!-- form is used for creating a form -->
+        <!-- there are two types of actions 
+        1.get 
+        2.post(recommmended) -->
+        <div>
+            <!-- div is used for new line
+            instead,<br> is also used for breaking a line but it is not much recommmended -->
+            <label for="username">Enter your Username:</label>
+            <!-- label is for what is being taken as input -->
+            <input type="text" id="username" name="username"  placeholder="Enter your username" autofocus>
+            <!-- for an div should be same 
+            placeholder(optional) ka mathlab hotha hai the text to be shown before entered ex: enter the name here... -->
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <!-- here name is same male and gender ,it is done like that cause we need to select anyone of the two -->
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+    </form>
+</body>
+
+</html>
+

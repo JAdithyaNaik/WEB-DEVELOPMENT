@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_8</title>
+    <style>
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: rgb(55, 0, 255);
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 60px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: bounce1 3s ease-in infinite, bounce2 1s ease-out infinite alternate;
+
+        }
+
+        @keyframes bounce1 {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 50%;
+            }
+        }
+
+        @keyframes bounce2 {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Makiing  a ball to bounce using transition or animation -->
+    <div class="container">
+        <div class="ball">
+            
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORMS</title>
+    <style>
+    
+    
+        .container{
+            height: 80vh;
+            /* margin: 20px; */
+            border: 2px solid green;
+        }
+        .box{
+            /* margin: 20px; */
+            border: 2px solid rgb(0, 0, 0);
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+/* units are 2 : 1.deg    2.turn */
+            /* 1.rotate      all,x,y,z     units are 2 : 1.deg    2.turn 
+            2.skew-    x,y   no z axis     units deg
+            3.translate  all, x,y,z        units px,%
+            4.scale-      all,x,y,z        units(1.6   or etc)
+            5.origin   */
+            transform: rotate(30deg);
+            transform-origin: 10% 0%;
+            /* transform: translate(30px); */
+        } 
+    </style>
+</head>
+<body>
+    <h3>TRANSFORMS- 2d and 3d</h3>
+        <div class="container">
+            <div class="box">Box</div>
+        </div>
+</body>
+</html>
