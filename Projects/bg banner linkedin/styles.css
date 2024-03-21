@@ -1,0 +1,11 @@
+img{
+    height:40px;
+    width: 60px;
+    align-items: center;
+    align-content: center;
+}
+.out{
+    margin-top: 20%;
+   margin-left: 40%;
+   display: flex;
+}
