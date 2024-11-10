@@ -1,0 +1,5 @@
+{
+    "livePreview.debugOnExternalPreview": true,
+    "livePreview.openPreviewTarget": "External Browser",
+    "livePreview.customExternalBrowser": "Chrome"
+}

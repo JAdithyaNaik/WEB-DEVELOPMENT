@@ -7,40 +7,51 @@
     <title>Bio-Data Submission Form </title>
 </head>
 <!-- TOOK HELP FROM CODEBRO YT CHANNEL (FORMS IN 10+ MINS VIDEO) -->
+
 <body>
     <form action="post">
+
         <label for="name">Enter your Name : </label>
         <input type="text" id="name" placeholder="Adithya">
         <br><br>
+
         <label for="gender">Gender : </label>
         <input type="radio" id="male" name="sex">
         <label for="male">Male</label>
         <input type="radio" id="female" name="sex">
         <label for="female">Female</label>
         <br><br>
+
         <label for="password">Password : </label>
-        <input type="password" id="address" placeholder="abcdef">
+        <input type="password" id="password" placeholder="abcdef">
         <br><br>
+
         <label for="rollno">Rollnumer : </label>
         <input type="text" id="rollno" placeholder="22311A12H4" pattern="[0-9]{5}[A-Z]{1}[0-9]{2}[A-Z]{1}[0-9]{1}">
         <br><br>
+        
         <label for="email">Enter your Email id :</label>
         <input type="email" id="email" placeholder="22311a12h4@sreenidhi.edu.in"
             pattern="[0-9]{5}[a-z]{1}[0-9]{2}[a-z]{1}[0-9]{1}@sreenidhi.edu.in">
         <br><br>
+
         <label for="fname">Enter your Father's Name : </label>
         <input type="text" id="fname" placeholder="Ramesh">
         <br><br>
+
         <label for="mname">Enter your Mother's Name : </label>
         <input type="text" id="mname" placeholder="Vimala">
         <br><br>
+
         <label for="mobileno">Enter your Mobile Number :</label>
         <input type="tel" id="mobileno" placeholder="9121170501">
         <!-- if you wanted to give a patter then use this pattern="[0-9]{5} [0-9]{5}" -->
         <br><br>
+
         <label for="dob">Enter your Date of birth : </label>
         <input type="date" id="dob">
         <br><br>
+
         <label for="course">Course you are pursuing : </label>
         <select id="course">
             <option value="B.Tech">B.Tech</option>
@@ -48,6 +59,7 @@
             <option value="MBA">MBA</option>
         </select>
         <br><br>
+
         <label for="passout">Year of Graduation : </label>
         <select id="passout">
             <option value="2023-2027">2023-2027</option>
@@ -56,22 +68,28 @@
             <option value="2020-2024">2024-2028</option>
         </select>
         <br><br>
+
         <label for="year">Which year you are studing : </label>
         <input type="number" id="year" min="1" max="4" value="1">
         <!-- we can you value attribute for default values like, -->
         <br><br>
+
         <label for="Intrest">Do you like Coading :</label>
         <input type="checkbox" id="Intrest">
         <br><br>
+
         <label for="resume">Attach your Resume : </label>
         <input type="file" id="resume">
         <!-- accept="image/jpeg"  this is used for accepting particular type of format like jpg,pdf ....etc -->
         <br><br>
+
         <label for="address">Residence Address : </label><br>
         <textarea id="address" cols="30" rows="10" placeholder="Write here..."></textarea>
         <!-- If needed enter no.of rows and cols needed chedck the syntax for it -->
         <br><br>
+
         <input type="reset">
+
         <input type="submit">
     </form>
 </body>

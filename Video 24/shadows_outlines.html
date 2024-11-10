@@ -10,18 +10,33 @@
             border: 2px solid green;
             /* box-shadow: h-offset v-offset blur spread color inset;
             inset is optional and it is used when we need to keep a shadow inside the box */
-            box-shadow: 7px 7px 15px 3px #311a1a;
+            box-shadow: 0px 0px 15px 3px #311a1a;
             /* text-shadow: h-offset v-offset blur color; */
             text-shadow:  2px 2px 4px #e50c0c;;
         }
         p{
-            outline:19px solid blue;
-            /* this is thedistance between the outline and border */
-            outline-offset: 3px;
+            outline:5px solid blue;
+            /* this is the distance between the outline and border */
+            outline-offset: 1px;
             border:5px solid #311a1a;
             border-radius: 20px;
         }
     </style>
+
+<!-- outline width is not gonna be a part of box model -->
+ <!-- thats diff from box model -->
+  <!-- one thing that u can do with outline is : we cant make  a border apart or give space from the content without effecting the box model but in outline we can without effecting the box model -->
+
+
+<!-- 
+
+box-shadow: h-offset v-offset blur spread color inset;
+h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner.
+-->
 </head>
 <body>
 
@@ -30,7 +45,7 @@
         borders is from inside while outline is from outside
     </h4>
     <div class="shadows">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio expedita, neque ipsa nobis beatae nesciunt. Ipsa soluta suscipit, error, cupiditate non blanditiis aspernatur dolor debitis dolore ducimus eveniet fugit in? Vitae nesciunt laboriosam optio rem, accusamus atque distinctio molestias totam incidunt saepe doloribus architecto quia quam repellat omnis nisi nobis aliquid officiis natus quae impedit expedita nihil. Animi debitis voluptas excepturi in rerum labore voluptates ducimus saepe consequatur officiis temporibus iusto ipsum, autem, deserunt voluptatum maxime sequi assumenda ab aperiam fugit modi vero beatae, architecto perferendis. Ut qui sed perspiciatis asperiores ratione nihil nostrum ex rem reiciendis? Corrupti, unde.
+        Lorem ipsum dolor sit amet ctetur adipisicing elit. Alias optio expedita, neque ipsa nobis beatae nesciunt. Ipsa soluta suscipit, error, cupiditate non blanditiis aspernatur dolor debitis dolore ducimus eveniet fugit in? Vitae nesciunt laboriosam optio rem, accusamus atque distinctio molestias totam incidunt saepe doloribus architecto quia quam repellat omnis nisi nobis aliquid officiis natus quae impedit expedita nihil. Animi debitis voluptas excepturi in rerum labore voluptates ducimus saepe consequatur officiis temporibus iusto ipsum, autem, deserunt voluptatum maxime sequi assumenda ab aperiam fugit modi vero beatae, architecto perferendis. Ut qui sed perspiciatis asperiores ratione nihil nostrum ex rem reiciendis? Corrupti, unde.
     </div>
 
     <p>

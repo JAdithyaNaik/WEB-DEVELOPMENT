@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    /* background-color: black; */
+    background-color: rgb(145, 139, 139);
 }
 .box1{
     background: rgb(158, 149, 149);
@@ -23,9 +23,14 @@
     padding: 30px;
     font-size: 18px;
     text-align: center;
-    /* background: rgb(111, 84, 84); */
+    background: rgb(111, 84, 84);
     margin: 10px;
     width: 40%;
+}
+
+.publications{
+background-color: red;
+border: 3px solid rgb(166, 255, 0);
 }
 .strengths{
     cursor: pointer;
@@ -133,7 +138,7 @@ ul{
 }
 .eduskillsproje{
     background-color: rgb(212, 133, 133);
-    /* display: flex; */
+    display: flexbox;
 }
 .edu{
     margin: 10px;

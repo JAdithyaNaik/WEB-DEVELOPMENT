@@ -1,0 +1,98 @@
+html{
+    display: flex;
+    margin: 0% 15%;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+img{
+    width: 18px;
+    padding: 6px;
+}
+body{
+    margin: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 23px;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+}
+#header-text{
+    text-align: center;
+    margin: 0px;
+    font-size: larger;
+    padding: 0px;
+}
+#header-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#header-media > span {
+    padding: 5px;
+    text-align: center;
+}
+#header-media > span > a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#profile{
+    margin: 0px;
+}
+
+.separator{
+    border: 2px solid grey;
+    /* padding: 10px; */
+    margin: 0px;
+}
+td{
+    margin: 5px;
+    padding: 20px;
+    /* flex-direction: row;
+    display: flex; */
+    align-content: space-between;
+}
+.skills-8 > ul {
+    display: flex;
+    margin: 8px;
+}
+.skills-8 > ul > li{
+    /* gap: 2px; */
+    /* width: fit-content; */
+    padding: 5px 10px; 
+    margin: 10px;
+
+}
+
+.languages-3 > ul {
+    display: flex;
+    margin: 8px;
+}
+.languages-3 > ul > li{
+    padding: 5px 10px; 
+    margin: 10px;
+}
+section{
+    padding-bottom: 5px;
+}
+.certificates > ul{ 
+    /* display: flex; */
+    margin: 2px;
+}
+.certificates > ul > li{
+    padding: 5px 10px; 
+    margin: 5px;
+}
+.publication dl dt {
+    font-size: larger;
+    font-weight: 600;
+}
+.publication dl dd {
+    font-size: medium;
+}
