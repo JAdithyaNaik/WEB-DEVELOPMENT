@@ -21,9 +21,10 @@
 ---->
 when ever local variables are declared using the same name then they override the globalvalues*/
 
-        /* variables are not only used for colours initialization */
+        /* variables are not only used for colours initialization
+        but even urls and many more */
         --defpad: 20px;
-        --defop : 0.4;
+        --defop : 0.67;
         /* defop ko opacity nahi hotha hai */
     }
 
@@ -47,6 +48,7 @@ when ever local variables are declared using the same name then they override th
 
     span {
         --c: blue;
+        /* color ko over ride kar sakhthe */
         color: var(--c);
         padding: var(--defpad);
         opacity: var(--defop);

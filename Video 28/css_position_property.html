@@ -103,6 +103,17 @@
 
 
 
+<!-- 1.static : default,no top,bottom,left,right,z-index can be applied -->
+
+<!-- 2.relative : its place wil be at the dimensions you will give from its intiial position ---top,,bottom,left,right,z-index can be applied -->
+ 
+<!-- 3.absolute : according to its nearest posiitoned(has position property or even transform,filter or perspective properties ) ancestor -->
+
+<!-- 4.fixed : as related to page,wont chnage even page is scrolled -->
+
+<!-- 5.sticky : get sticks when scrolled,it behaves as static untill its time comes to get hidden -->
+
+
 <!-- what is the difference between sticky and fixed
 
 ANS:
@@ -113,7 +124,8 @@ fixed:
 -----
 when it is scrolled or not let it fixed with its properties
 -->
-<!-- *********IMP********
+<!-- *********IMP- in the case of absolute********
+
 when ever a block of code is a child of another block of code,and when ever we are applying position property when a child checks with respect to the parent of position property
 
 but there is a exception that , child's position property is checked iwth the parents other properties like:transform,filter,perspective

@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>objectfit_objectcover</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .container {
+        /* instaead of giving bgcolor we can give bgimage */
+        /* background-color: red; */
+        background-image: url(https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg);
+        /* background position same as object-position*/
+
+        background-position: center center;
+        /* background-repeat: repeat;
+        background-repeat: repeat-x; */
+        height: 2254px;
+        width: 345px;
+        border: 2px solid black;
+        padding: 3px;
+      }
+      /* here image overflows out from the conatiner */
+      /* so we do object-fit contain or cover */
+      /* img{
+            width: 134px;
+            height: 265px;
+            /* object-fit:contain; */
+      /* contains in that given dimensions */
+
+      /* takes this image by avoiding some part of the image and we can specify which part of the image can be taken by object-position : top right,bottom left etc...we can give the values */
+
+      /* covers that whole image in that dimensions baaaki milaa hua image ignore kardhiya jayega */
+      /* object-fit: cover; */
+      /* object-position: top left; */
+      /* object-position: top right; */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt=""> -->
+    </div>
+  </body>
 </html>

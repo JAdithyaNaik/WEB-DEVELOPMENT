@@ -13,8 +13,19 @@
             /* this property should be added to container but no on the  items,kyyuin ki container me vo flex hona chahiiye na!! apko */
             display: flex;
             /* this is to keep the content in the container in center */
+
+
+
+
             /* does horizontally center */
+
+
             justify-content: center;
+            /* (centers on main axis) */
+
+
+
+
             /* justify items nahi hotha hai */
             /* more types in justify content and aliegn items
     1.left
@@ -23,10 +34,27 @@
     4.flex start(yaha flex ka mathlab hai border i.e border ke start pe)
     5.space around(all 4 sides gaps)
     6.space between(only 2 sides gaps) */
+
+
+
             /* does vertically center */
+
+
+/* place-content: ; -----> both align-items: center ; justify-content:center ; */
+
+
+
             align-items: center;
+            /* (centers on cross axis) */
+            /* when the data or boxes are in one line then align item */
+            /* when the data or boxes are in more than 1 line then align content i.e when we do flex wrap*/
+
+
+
             /* flex-direction: column;
-    flex box me 2 axis hotha hai 1.main axis(direction of flex direction)  2.cross axis */
+    flex box me 2 axis hotha hai ;
+    1.main axis(direction of flex direction)  
+    2.cross axis */
             /* flex-wrap: flex direction wrap kaha karna; */
             flex-flow: row wrap;
             /* this is used when we have mutiple lines */
@@ -100,7 +128,7 @@
 4.gap -->
 
     <!-- new concepts on item
- 1.order-default=0
+ 1.order-default=0 - more order goes to last
  2.flex grow
  3.flex shrink
  4.align self(for that particular item) ( the item which has higheest oreder comes last)-->

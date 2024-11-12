@@ -1,148 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ex_5</title>
     <!-- we can add multiple style tags also -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
     </style>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .layout {
-            padding: 0px;
-            margin: 0px;
-            border: 2px solid red;
-            height: 1080px;
-            width: 1510px;
-        }
-
-        .navbar {
-            text-align: center;
-            background-color: rgb(98, 0, 98);
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-            width: 1510px;
-
-
-        }
-
-        li {
-            /* this removes the dots from starting */
-            list-style: none;
-            color: rgb(255, 255, 255);
-            display: inline-flex;
-            padding: 7px;
-            border: 2px solid rgb(219, 0, 253);
-            border-radius: 15px;
-            font: bold;
-            font-family: 'Poppins', sans-serif;
-            background-color: rgb(161, 92, 225);
-            margin: 7px;
-            position: relative;
-            text-align: center;
-        }
-
-        .box1 {
-            border: 3px solid rgb(214, 10, 200);
-            height: 220px;
-            width: 380px;
-            /* position: relative; */
-            display: inline-block;
-            padding: 30px;
-            background-color: rgb(162, 228, 162);
-            margin: 150px;
-            border-radius: 15px;
-        }
-
-        .box2 {
-            border: 3px solid rgb(214, 10, 200);
-            height: 220px;
-            width: 380px;
-            padding: 30px;
-            margin: 100px;
-            border-radius: 15px;
-            background-color: rgb(248, 240, 175);
-            /* position: relative; */
-            display: inline-block;
-        }
-
-        .b {
-             position: sticky;
-             top: 0px;
-            margin: 20px;
-            border: 3px solid rgb(245, 0, 245);
-            border-radius: 15px;
-            background-color: lightblue;
-        }
-
-        .matter {
-            border: 3px solid black;
-            border-radius: 30px;
-            width: 60vw;
-            margin-left: 350px;
-            background-color: lightpink;
-        }
-
-        p{
-            text-align: center;
-            font: bold;
-            font-family: 'Poppins', sans-serif;
-            
-        }
-      .logo{
-        margin-left: 1450px;
-       
+      * {
+        margin: 0px;
+        padding: 0px;
       }
-        img{
-            bottom: 0px;
-            position: fixed;
-        }
-       .wantedtext{
-font-size: x-small;
-margin: 10px;
-padding: 30px;
-border: 2px solid rgb(0, 0, 0);
-background-color: slategrey;
-       }
-    </style>
-</head>
 
-<body>
+      .layout {
+        padding: 0px;
+        margin: 0px;
+        /* border: 2px solid red; */
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .navbar {
+        text-align: center;
+        background-color: rgb(98, 0, 98);
+        margin: 0px;
+        padding: 0px;
+        position: sticky;
+        top: 0px;
+        /* width: 1510px; */
+      }
+
+      li {
+        /* this removes the dots from starting */
+        list-style: none;
+        color: rgb(255, 255, 255);
+        display: inline-flex;
+        padding: 7px;
+        border: 2px solid rgb(219, 0, 253);
+        border-radius: 15px;
+        font: bold;
+        font-family: "Poppins", sans-serif;
+        background-color: rgb(161, 92, 225);
+        margin: 7px;
+        /* position: relative; */
+        text-align: center;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+
+      .box1 {
+        border: 3px solid rgb(214, 10, 200);
+        height: 30vh;
+        width: 50vw;
+        /* position: relative; */
+        /* display: inline-block; */
+        padding: 30px;
+        background-color: rgb(162, 228, 162);
+        margin: 100px;
+        border-radius: 15px;
+      }
+
+      .box2 {
+        border: 3px solid rgb(214, 10, 200);
+        height: 30vh;
+        width: 50vw;
+        /* padding: 30px; */
+        margin: 100px;
+        border-radius: 15px;
+        background-color: rgb(248, 240, 175);
+        /* position: relative; */
+        /* display: inline-block; */
+      }
+
+      .b {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px 20px;
+        /* border: 1px solid rgb(245, 0, 245); */
+        /* border-radius: 15px; */
+        background-color: rgb(35, 183, 232);
+      }
+
+      .matter {
+        
+        border: 3px solid black;
+        border-radius: 30px;
+        /* width: 60vw; */
+        width: 80%;
+        margin: auto;
+        background-color: lightpink;
+      }
+
+      p {
+        text-align: center;
+        font: bold;
+        font-family: "Poppins", sans-serif;
+      }
+      .logo {
+        background-color: red;
+        display: flex;
+        align-items: center;
+        margin-left: 85vw;
+        bottom: 0px;
+        position: fixed;
+      }
+      .logo span {
+        width: 10vw;
+      }
+      img {
+        border-radius: 50%;
+      }
+      .wantedtext {
+        font-size: x-small;
+        margin: 10px;
+        padding: 30px;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: slategrey;
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- design a layout -->
     <div class="layout">
-        <div class="navbar">
-            <ul>
-                <li>Home</li>
-                <li>Carrer</li>
-                <li>Notes</li>
-                <li>Courses</li>
-                <li>Settings</li>
-            </ul>
-        </div>
-        <div class="b">
-            <div class="box1">sdfs</div>
-            <div class="box2">sdfgsgsg</div>
-       
+      <div class="navbar">
+        <ul>
+          <li>Home</li>
+          <li>Carrer</li>
+          <li>Notes</li>
+          <li>Courses</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+      <div class="b">
+        <div class="box1">sdfs</div>
+        <div class="box2">sdfgsgsg</div>
+
         <div class="matter">
-            <P>Welcome to "SIGMA WEB DEVELOPMENT COURSE" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --By CODE WITH HARRY </P>
+          <p>
+            Welcome to "SIGMA WEB DEVELOPMENT COURSE"
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            --By CODE WITH HARRY
+          </p>
         </div>
         <div class="logo">
-            <img src="harry_logo.jpeg" alt="" width="50px" height="50px" >
+          <img src="harry_logo.jpeg" alt="" width="50px" height="50px" />
+          <span>Code With Harry</span>
         </div>
         <div class="wantedtext">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis libero ab animi quae temporibus corrupti et delectus fugiat non recusandae iste nesciunt odit laboriosam saepe labore, sunt consectetur ducimus ipsum velit quo cumque voluptas maxime? Atque ratione voluptatum debitis, vitae labore iure nostrum ea, doloribus cupiditate quod in totam eligendi voluptatem, quibusdam maiores praesentium delectus blanditiis ullam velit expedita ab fugiat deserunt. Accusamus nesciunt, fugiat consectetur facere nemo pariatur magni, quis eos nisi ducimus aperiam qui deleniti amet excepturi odio sit dolorum velit culpa? Recusandae, veniam natus dignissimos possimus corporis voluptatibus sed delectus sit, sint, aspernatur doloribus? Soluta magni neque ratione debitis nam iste voluptatum dicta fugit nobis, possimus, voluptas voluptate dolorum ea. Distinctio reiciendis laudantium obcaecati consequatur quos perferendis, aspernatur, est, ducimus eaque atque maxime possimus officia? Vitae eum perferendis fugiat expedita, delectus repellendus obcaecati dolore, tenetur ipsum quod nisi omnis culpa. Minima fugit excepturi voluptatum natus animi, debitis deserunt dolorum ratione esse non fugiat? Harum nesciunt ut necessitatibus unde illum quia alias esse maxime ducimus, officia omnis! Quis iusto vitae, aliquam necessitatibus officiis molestias neque corrupti provident. Mollitia at omnis porro aliquid repellat, possimus ullam beatae, alias veniam eligendi iusto et quidem nulla similique perspiciatis nisi enim sed. Suscipit aspernatur consequuntur dolores laboriosam voluptatum quos, ad soluta nesciunt architecto enim deserunt nihil corporis, expedita et facilis culpa corrupti veritatis placeat quod adipisci consequatur hic reiciendis. Dolorem, assumenda sed repellendus, laboriosam est magni, eaque velit unde totam quos repellat facilis voluptatem laborum quibusdam! Perferendis consequatur, alias officia nemo doloribus vitae temporibus, culpa numquam fugiat voluptatibus totam et adipisci doloremque error maxime. Commodi blanditiis labore, possimus adipisci illum est soluta tenetur ipsam laudantium repellat sunt, nam non in provident quaerat dolore eos, quae quam alias beatae consectetur! Nostrum laboriosam nisi quam aut optio corporis suscipit incidunt similique obcaecati? Voluptatibus mollitia consequatur tempora illo molestias. Odit blanditiis architecto impedit, dolores aut quod, quis enim maiores aliquam nulla quisquam cumque mollitia doloremque incidunt labore! Vero temporibus vitae natus quod. Enim dolorem neque nisi praesentium, culpa eius recusandae temporibus a blanditiis modi repellendus iusto consequatur et sunt ea!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis libero ab animi quae temporibus corrupti et delectus
+            fugiat non recusandae iste nesciunt odit laboriosam saepe labore,
+            sunt consectetur ducimus ipsum velit quo cumque voluptas maxime?
+            Atque ratione voluptatum debitis, vitae labore iure nostrum ea,
+            doloribus cupiditate quod in totam eligendi voluptatem, quibusdam
+            maiores praesentium delectus blanditiis ullam velit expedita ab
+            fugiat deserunt. Accusamus nesciunt, fugiat consectetur facere nemo
+            pariatur magni, quis eos nisi ducimus aperiam qui deleniti amet
+            excepturi odio sit dolorum velit culpa? Recusandae, veniam natus
+            dignissimos possimus co Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Officiis dolore minus placeat libero cumque
+            aliquid fuga voluptatum ratione ipsa, laudantium enim similique,
+            molestiae voluptatibus est qui aliquam tenetur temporibus autem,
+            nesciunt itaque. Temporibus doloremque adipisci obcaecati minima
+            veritatis! Tenetur repellat inventore corporis nisi officia
+            reprehenderit suscipit quasi, natus quisquam et quaerat nulla
+            ducimus saepe ullam, voluptatum quos repudiandae voluptatibus sit
+            aut eligendi! Recusandae, beatae eos. Laborum quod doloremque,
+            corporis iure dolore eius numquam nulla impedit ratione eum aperiam!
+            Aspernatur minus temporibus molestiae, vero magni debitis harum
+            voluptates deserunt? Repellat facilis officia labore nulla animi
+            doloribus voluptas non assumenda temporibus, dolor enim excepturi
+            incidunt. Veritatis vero tempora magnam modi repellendus quam quae
+            dolore nulla repudiandae suscipit sed, officia cupiditate nemo sequi
+            accusamus praesentium! Nisi consequatur nemo unde dolorum reiciendis
+            aliquid, eos impedit, ullam, quia nihil sint deleniti eius officiis
+            neque possimus. Dicta eum illo incidunt magni dolorum reprehenderit
+            laboriosam officia quos omnis asperiores commodi quae numquam earum
+            neque aut consectetur cum adipisci, autem cumque! Eligendi molestiae
+            animi vero tempora cum eius adipisci impedit fugiat earum similique
+            at quaerat consectetur esse, incidunt quos ut delectus accusamus est
+            dolorum. Officiis inventore aut aspernatur minima provident, fugiat
+            doloribus consectetur! Reiciendis nam fugit velit praesentium.
+            rporis voluptatibus sed delectus sit, sint, aspernatur doloribus?
+            Soluta magni neque ratione debitis nam iste voluptatum dicta fugit
+            nobis, possimus, voluptas voluptate dolorum ea. Distinctio
+            reiciendis laudantium obcaecati consequatur quos perferendis,
+            aspernatur, est, ducimus eaque atque maxime possimus officia? Vitae
+            eum perferendis fugiat expedita, delectus repellendus obcaecati
+            dolore, tenetur ipsum quod nisi omnis culpa. Minima fugit excepturi
+            voluptatum natus animi, debitis deserunt dolorum ratione esse non
+            fugiat? Harum nesciunt ut necessitatibus unde illum quia alias esse
+            maxime ducimus, officia omnis! Quis iusto vitae, aliquam
+            necessitatibus officiis molestias neque corrupti provident. Mollitia
+            at omnis porro aliquid repellat, possimus ullam beatae, alias veniam
+            eligendi iusto et quidem nulla similique perspiciatis nisi enim sed.
+            Suscipit aspernatur consequuntur dolores laboriosam voluptatum quos,
+            ad soluta nesciunt architecto enim deserunt nihil corporis, expedita
+            et facilis culpa corrupti veritatis placeat quod adipisci
+            consequatur hic reiciendis. Dolorem, assumenda sed repellendus,
+            laboriosam est magni, eaque velit unde totam quos repellat facilis
+            voluptatem laborum quibusdam! Perferendis consequatur, alias officia
+            nemo doloribus vitae temporibus, culpa numquam fugiat voluptatibus
+            totam et adipisci doloremque error maxime. Commodi blanditiis
+            labore, possimus adipisci illum est soluta tenetur ipsam laudantium
+            repellat sunt, nam non in provident quaerat dolore eos, quae quam
+            alias beatae consectetur! Nostrum laboriosam nisi quam aut optio
+            corporis suscipit incidunt similique obcaecati? Voluptatibus
+            mollitia consequatur tempora illo molestias. Odit blanditiis
+            architecto impedit, dolores aut quod, quis enim maiores aliquam
+            nulla quisquam cumque mollitia doloremque incidunt labore! Vero
+            temporibus vitae natus quod. Enim dolorem neque nisi praesentium,
+            culpa eius recusandae temporibus a blanditiis modi repellendus iusto
+            consequatur et sunt ea!
+          </p>
         </div>
-    
+      </div>
     </div>
-</div>
-</body>
-
+  </body>
 </html>

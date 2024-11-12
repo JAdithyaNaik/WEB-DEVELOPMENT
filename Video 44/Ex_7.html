@@ -1,263 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ex_7</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Whisper&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    </style>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap');
-  </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
     </style>
     <style>
-        .boxes {
-
-            justify-content: center;
-            align-items: center;
-            display: grid;
-            grid-template-columns: 300px 300px 300px;
-            cursor: pointer;
-
-        }
-
-
-        .box {
-
-            background-color: rgba(232, 242, 232, 0.426);
-            width: 270px;
-            height: 150px;
-            text-align: center;
-            margin: 10px;
-
-        }
-
-        .language {
-            font-size: large;
-            font-family: 'Poppins', sans-serif;
-
-        }
-
-        .discription {
-            font-size: smaller;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .download {
-            margin: 10px;
-            padding: 10px;
-            gap: 30px;
-            font-size: small;
-        }
-
-        nav {
-            display: flex;
-            padding: 10px;
-            align-content: stretch;
-            padding: 20px;
-            justify-content: space-around;
-
-        }
-
-        img {
-            align-self: start;
-            margin-left: 0px;
-
-        }
-
-        .item {
-            justify-content: center;
-            /* align-content: center; */
-            display: flex;
-            text-align: right;
-            gap: 10px;
-            padding: 2px;
-            height: 20px;
-            margin-left: 20px;
-            font-family: 'Poppins', sans-serif;
-            /* border: 2px solid black; */
-            border-radius: 30px;
-            font-size: 15px;
-            cursor: pointer;
-
-        }
-
-        .bars {
-            align-content: center;
-            justify-content: center;
-            display: flex;
-            margin-left: 48vw;
-
-            :hover {
-                background-color: rgb(228, 228, 228);
-
-            }
-        }
-
-        .final {
-            display: flex;
-        }
-        .textmain{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 23px;
-            font-family: 'Poppins', sans-serif;
-        }
-        .smalldisc{
-    
-            font-family: 'Red Hat Text', sans-serif;
-         text-align: center;
-            font-size: 17px;
-            font-weight: 10px;
-           
-            
-        }
-        .versi{
-            text-align: center;
-            padding: 20px;
-            
-          
-        }
-        .three{
-            background-color: rgb(0, 183, 255);
-            border: 2px solid rgb(0, 183, 255);
-            padding: 7px;
-            margin: 2px;
-            border-radius: 5px;
-            width: 60px;
-            color: white;
-           text-decoration: none;
-        }
-        .six{
-            
-            background-color: rgb(65, 203, 65);
-            border: 2px solid rgb(38, 178, 38);
-            padding: 7px;
-            margin: 2px;
-            border-radius: 5px;
-            width: 60px;
-            columns: white;
-            text-decoration: none;
-        }
-        h1 img{
-            cursor: pointer;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap");
     </style>
-</head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    </style>
+    <style>
+      .boxes {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+      }
 
-<body>
+      .box {
+        background-color: rgba(232, 242, 232, 0.426);
+        width: 270px;
+        height: 150px;
+        text-align: center;
+        margin: 10px;
+      }
 
+      .language {
+        font-size: large;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .discription {
+        font-size: smaller;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .download {
+        margin: 10px;
+        padding: 10px;
+        gap: 30px;
+        font-size: small;
+      }
+
+      nav {
+        display: flex;
+        padding: 10px;
+        align-content: stretch;
+        padding: 20px;
+        justify-content: space-around;
+      }
+
+      img {
+        align-self: start;
+        margin-left: 0px;
+      }
+
+      .item {
+        justify-content: center;
+        /* align-content: center; */
+        display: flex;
+        text-align: right;
+        gap: 10px;
+        padding: 2px;
+        height: 20px;
+        margin-left: 20px;
+        font-family: "Poppins", sans-serif;
+        /* border: 2px solid black; */
+        border-radius: 30px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .bars {
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 48vw;
+
+        :hover {
+          background-color: rgb(228, 228, 228);
+        }
+      }
+
+      .final {
+        display: flex;
+      }
+      .textmain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        font-family: "Poppins", sans-serif;
+      }
+      .smalldisc {
+        font-family: "Red Hat Text", sans-serif;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 10px;
+      }
+      .versi {
+        text-align: center;
+        padding: 20px;
+      }
+      .three {
+        background-color: rgb(0, 183, 255);
+        border: 2px solid rgb(0, 183, 255);
+        padding: 7px;
+        margin: 2px;
+        border-radius: 5px;
+        width: 60px;
+        color: white;
+        text-decoration: none;
+      }
+      .six {
+        background-color: rgb(65, 203, 65);
+        border: 2px solid rgb(38, 178, 38);
+        padding: 7px;
+        margin: 2px;
+        border-radius: 5px;
+        width: 60px;
+        columns: white;
+        text-decoration: none;
+      }
+      h1 img {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
     <body>
-        <nav>
-            <div class="img">
-                <img src="Dark-logo.png" alt="" height="50px">
+      <nav>
+        <div class="img">
+          <img src="Dark-logo.png" alt="" height="50px" />
+        </div>
+        <div class="final">
+          <div class="item item1">
+            Products <img src="down.jpeg" alt="" height="10px" />
+          </div>
+          <div class="item item2">
+            Pricing <img src="down.jpeg" alt="" height="10px" />
+          </div>
+          <div class="item item3">
+            Resources <img src="down.jpeg" alt="" height="10px" />
+          </div>
+          <div class="item item4">
+            About <img src="down.jpeg" alt="" height="10px" />
+          </div>
+          <div class="item item5">
+            <img src="translate.jpg  " alt="" height="25px" />
+          </div>
+        </div>
+      </nav>
+      <div class="textmain">
+        <h1>
+          Download UltraEdit for Windows &nbsp;&nbsp;<img
+            src="rating.png "
+            height="60px"
+            alt=""
+          />
+        </h1>
+      </div>
+      <div class="smalldisc">
+        <h3>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows <br />
+          version of the text editor.
+        </h3>
+      </div>
+      <div class="versi">
+        <a href="https://www.ultraedit.com/downloads/uex-thank-you/"
+          >DOWNLOAD MAC OR LINUX VERSION</a
+        >
+      </div>
+      <main>
+        <div class="boxes">
+          <div class="box" id="a">
+            <p class="language">English</p>
+            <p class="discription">English</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
             </div>
-            <div class="final">
-                <div class="item item1">Products <img src="down.jpeg" alt="" height="10px"></div>
-                <div class="item item2">Pricing <img src="down.jpeg" alt="" height="10px"></div>
-                <div class="item item3">Resources <img src="down.jpeg" alt="" height="10px"></div>
-                <div class="item item4">About <img src="down.jpeg" alt="" height="10px"></div>
-                <div class="item item5"><img src="translate.jpg  " alt="" height="25px"></div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">Deutsch</p>
+            <p class="discription">German</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
             </div>
-        </nav>
-        <div class="textmain">
-        <h1>Download UltraEdit for Windows &nbsp;&nbsp;<img src="rating.png " height="60px" alt=""> </h1>
-    </div>
-    <div class="smalldisc"><h3>Download and try UltraEdit before you buy it! This download includes the full Windows <br> version of the text editor.</h3></div>
-    <div class="versi"><a href="https://www.ultraedit.com/downloads/uex-thank-you/">DOWNLOAD MAC OR LINUX VERSION</a></div>
-        <main>
-            <div class="boxes">
-                <div class="box" id="a">
-                    <p class="language">English</p>
-                    <p class="discription">English</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">Deutsch</p>
-                    <p class="discription">German</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">Italiano</p>
-                    <p class="discription">Italian</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">Español</p>
-                    <p class="discription">Spanish</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">français</p>
-                    <p class="discription">French</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">Português brasileiro</p>
-                    <p class="discription">Brazilian Portuguese</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">日本</p>
-                    <p class="discription">Japanese</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">한국어</p>
-                    <p class="discription">Korean</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">中国</p>
-                    <p class="discription">Chinese</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
-                <div class="box" id="a">
-                    <p class="language">中國</p>
-                    <p class="discription">Traditional Chinese</p>
-                    <div class="download">
-                        <a href="ue_english.exe" class="three"> Download 32 bit</a>
-                        <a href="ue_english_64.exe" class="six">Download 64 bit</a>
-                    </div>
-                </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">Italiano</p>
+            <p class="discription">Italian</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
             </div>
-        </main>
+          </div>
+          <div class="box" id="a">
+            <p class="language">Español</p>
+            <p class="discription">Spanish</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">français</p>
+            <p class="discription">French</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">Português brasileiro</p>
+            <p class="discription">Brazilian Portuguese</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">日本</p>
+            <p class="discription">Japanese</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">한국어</p>
+            <p class="discription">Korean</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">中国</p>
+            <p class="discription">Chinese</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+          <div class="box" id="a">
+            <p class="language">中國</p>
+            <p class="discription">Traditional Chinese</p>
+            <div class="download">
+              <a href="ue_english.exe" class="three"> Download 32 bit</a>
+              <a href="ue_english_64.exe" class="six">Download 64 bit</a>
+            </div>
+          </div>
+        </div>
+      </main>
     </body>
-</body>
-
+  </body>
 </html>
