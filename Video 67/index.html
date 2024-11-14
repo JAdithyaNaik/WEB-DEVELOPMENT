@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      height: 40px;
+      width: 40px;
+      margin: 5px;
+      padding: 2px;
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- every next line is trated as a text node in dom  -->
+    <div class="box">dfgdg</div>
+    <div class="box">dgfdgd</div>
+    <div class="box">dfvf</div>
+    <div class="box">bdbdt</div>
+    <div class="box">brtg</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- HEllo
+
+document.body.childNodes
+NodeList(5) [text, div.container, text, script, text]
+
+
+document.body.childNodes[1].childNodes
+NodeList(13) [text, comment, text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]
+
+ comments also treated as node -->
+
+
+<!-- element.firstChild -->
+<!-- element.lastChild -->
+<!-- these 2 methods gives me text node as output beccausse we make enter before and after the element -->
+
+<!-- so to get the elemet which is firts -->
+
+<!-- element.firstElementChild and .last ElementChild   -->
+<!-- which gives us div.box node -->
+
+
+<!-- element.parentElelemt ---- gives the parent node
+
+elelemt.previousSibling --- which gives its previous  sibling
+elelemt.nextSibling --- which gives its next  sibling
+
+
+elelemt.previousElemetSibling --- which gives its previous element sibling -->
+<!-- elelemt.nextElemetSibling --- which gives its next element sibling
+
+elelmet.childNodes ==  gives all the childs including text node and comment NodeList
+but if we want to get only childs which are elements then we use -->
+<!-- .childeren --> 
