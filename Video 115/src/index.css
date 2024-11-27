@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  margin: 0px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+}
+li{
+  list-style: none;
+  margin: 0px 10px ;
+  font-size: larger;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.red{
+  background-color: red;
+}
